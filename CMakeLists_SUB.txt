@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(MQTT_SUB LANGUAGES C)
+
+include_directories(/home/baran/Desktop/mosquitto/usr/local/include)
+
+link_directories(/home/baran/Desktop/mosquitto/usr/local/lib)
+
+add_executable(MQTT_SUB main.c)
+
+target_link_libraries(MQTT_SUB mosquitto)
